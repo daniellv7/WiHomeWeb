@@ -20,11 +20,19 @@ namespace WiHomeWeb
                         "~/Scripts/modernizr-*"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/bootstrap.js"));
+                      "~/Content/vendor/jquery/jquery.min.js",
+                      "~/Content/vendor/bootstrap/js/bootstrap.bundle.min.js",
+                      "~/Content/vendor/jquery-easing/jquery.easing.min.js",
+                      "~/Content/vendor/magnific-popup/jquery.magnific-popup.min.js",
+                      "~/Content/js/creative.min.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/vendor/fontawesome-free/css/all.min.css",
+                      "~/Content/vendor/magnific-popup/magnific-popup.css",
+                      "~/Content/css/creative.min.css"));
         }
+
+        //"~/Content/vendor/bootsrap/css/bootstrap.min.css"
+
     }
 }
