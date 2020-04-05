@@ -30,8 +30,8 @@
             <div class="row-contact">
                 <div class="column-contact">
                     <form action="/action_page.php">
-                        <input class="form-control" type="text" id="fullname" name="fullname" placeholder="Tu nombre completo...">
-                        <input class="form-control" type="text" id="email" name="email" placeholder="Tu correo electrónico...">
+                        <input class="form-control" type="text" id="fullname" name="fullname" placeholder="Tu nombre completo..." required>
+                        <input class="form-control" type="text" id="email" name="email" placeholder="Tu correo electrónico..." required>
                         <input class="form-control" type="text" id="tel" name="tel" placeholder="Tu teléfono...">
                         <label for="contact">Donde prefieres que te contactemos?</label>
                         <select class="form-control" id="contact" name="contact">
@@ -40,9 +40,9 @@
                         </select>
                     </form>
                 </div>
-                <div class="column-contact">
+                <div class="column-contact"> 
                     <form action="/action_page.php">
-                        <textarea class="form-control" id="subject" name="subject" placeholder="Escribe tu mensaje aqui..." style="height:170px"></textarea>
+                        <textarea class="form-control" id="subject" name="subject" placeholder="Escribe tu mensaje aqui..." style="height:170px" required></textarea>
                         <input type="submit" value="Submit" disabled>
                     </form>
                 </div>
